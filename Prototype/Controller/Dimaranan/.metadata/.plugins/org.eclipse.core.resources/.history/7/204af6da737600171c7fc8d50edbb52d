@@ -1,0 +1,35 @@
+import java.io.IOException;
+
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
+public class JSoup_Test1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		try {
+		Document doc= Jsoup.connect("http://www.imdb.com/list/ls055386972/").userAgent("Chrome/17.0").get();
+		Elements temp=doc.select("div.info");
+		
+		int i=0;
+		for(Element movieList:temp)
+		{
+			i++;
+			System.out.println(i + ""+ movieList.getElementsByTag("a").first().text() );
+		} 
+		
+		
+		
+		}
+		
+		catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		
+	}
+
+}
