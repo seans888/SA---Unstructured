@@ -1,0 +1,40 @@
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.util.*;
+
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
+import java.io.PrintWriter;
+public class Test_1 {
+
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+
+		try {
+			String str = "BufferedWriter";
+			PrintWriter out = new PrintWriter("Test1.txt");
+			
+		Document doc= Jsoup.connect("http://www.imdb.com/list/ls055386972/").userAgent("Chrome/17.0").get();
+		Elements temp=doc.select("div.info");
+		
+		int i=0;
+		for(Element movieList:temp)
+		{
+			i++;
+			out.write(i + " "+ movieList.getElementsByTag("a").first().text());
+			out.write(System.getProperty("line.separator"));
+			System.getProperty("line.separator");
+		}
+			out.close();
+		}
+			
+		catch (IOException e) {
+			e.printStackTrace();
+			
+		}	
+	}
+}
