@@ -1,0 +1,35 @@
+import java.io.IOException;
+
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
+public class JSoup_Test1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		try {
+		Document doc= Jsoup.connect("https://www.agoda.com/belmont-hotel-manila/hotel/all/manila-ph.html?checkin=2017-08-03&los=8&adults=2&rooms=1&cid=-187&searchrequestid=330d1f1e-3c4a-4db3-b799-1661c08dde1a#customer-reviews-panel").userAgent("Chrome/17.0").get();
+		Elements temp=doc.select("div.comment-title-text");
+		
+		int i=0;
+		for(Element movieList:temp)
+		{
+			i++;
+			System.out.println(i + ""+ movieList.getElementsByTag("i").first().text() );
+		}
+		
+		
+		
+		}
+		
+		catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		
+	}
+
+}
