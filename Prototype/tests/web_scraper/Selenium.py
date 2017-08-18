@@ -4,7 +4,6 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-
 ## get the Firefox profile object
 firefoxProfile = FirefoxProfile()
 
@@ -23,8 +22,16 @@ firefoxProfile.set_preference('dom.ipc.plugins.enabled.libflashplayer.so','False
 
 ## Use the driver
 browser = webdriver.Firefox(firefoxProfile, executable_path="../../driver/geckodriver.exe")
-
 browser.set_window_size(200,400)
+
+
+
+class Review:
+    def __init__(self, title, comment, score, review_date):
+        self.review_title = title
+        self.review_comment = comment
+        self.review_score = score
+        self.review_date = review_date
 
 
 def parse_reviews():
@@ -33,24 +40,26 @@ def parse_reviews():
     review_scores = browser.find_elements_by_class_name("comment-score")
     review_dates = browser.find_elements_by_name('reviewdate')
 
-    for review_title in review_titles:
-        print(review_title.text)
+    review_list = []
 
-    for review_comment in review_comments:
-        print(review_comment.text)
+    for idx in range(len(review_titles)):
+        review_list.append(idx)
 
-    for review_score in review_scores:
-        print(review_score.text)
+    for idx in range(len(review_list)):
+        review_list[idx] = Review(review_titles[idx], review_comments[idx], review_scores[idx], review_dates[idx])
 
-    for review_date in review_dates:
-        print(review_date.text)
+        print("Review: "+ str(idx + 1)
+              + "\n    Title: " + review_list[idx].review_title.text
+              + "\n    Comment: " + review_list[idx].review_comment.text
+              + "\n    Score: " + review_list[idx].review_score.text
+              + "\n    Date: " + review_list[idx].review_date.text)
 
 
 def main():
     browser.get("https://www.agoda.com/taal-vista-hotel/hotel/tagaytay-ph.html")
-    browser_wait = WebDriverWait(browser, 30)
+    browser_wait = WebDriverWait(browser, 100)
     page_number = 0
-    while page_number <= 4:
+    while page_number < 3:
         try:
             page_number += 1
             print("===================PAGE NUMBER: " + str(page_number))
@@ -58,8 +67,8 @@ def main():
             next_button = browser.find_element_by_css_selector("a[data-page='" + str(page_number) + "']")
             next_button.click()
             parse_reviews()
-        except:
-            print('An error occured.')
+        except Exception as e:
+            print(e)
 
     browser.close()
 
