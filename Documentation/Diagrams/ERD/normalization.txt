@@ -1,0 +1,52 @@
+REPORT 1
+	report code
+	report date
+
+REVIEW 1
+	review title
+	review comment
+	review date
+	rating
+	positive
+	negative
+	property
+	sub property
+	website name
+	website url
+	pos words
+	neg words
+
+
+
+REPORT 2
+	report code
+	report date
+	review id
+	
+REVIEW 2
+	review id
+	review title
+	review comment
+	review date
+	rating
+	positive
+	negative
+	sentiment id
+	web id
+	property id	
+
+SENTIMENT 2
+	sentiment id
+	pos words
+	neg words
+
+WEBSITE 2
+	web id
+	website name
+	website url
+
+PROPERTY 2
+	property id
+	property
+	sub property
+
