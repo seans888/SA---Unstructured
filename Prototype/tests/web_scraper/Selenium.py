@@ -57,15 +57,16 @@ def parse_reviews():
 
 def main():
     browser.get("https://www.agoda.com/taal-vista-hotel/hotel/tagaytay-ph.html")
-    browser_wait = WebDriverWait(browser, 100)
+    browser_wait = WebDriverWait(browser, 10)
     page_number = 0
     while page_number < 3:
         try:
             page_number += 1
             print("===================PAGE NUMBER: " + str(page_number))
+            if page_number > 1:
+                next_button = browser.find_element_by_css_selector("a[data-page='" + str(page_number) + "']")
+                next_button.click()
             browser_wait.until(EC.visibility_of_all_elements_located((By.CLASS_NAME, "individual-review-item")))
-            next_button = browser.find_element_by_css_selector("a[data-page='" + str(page_number) + "']")
-            next_button.click()
             parse_reviews()
         except Exception as e:
             print(e)
