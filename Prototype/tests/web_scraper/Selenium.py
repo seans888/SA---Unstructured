@@ -9,7 +9,7 @@ firefoxProfile = FirefoxProfile()
 
 # 1=enabled, 2=disabled ; True=enabled, False=disabled
 ## CSS
-firefoxProfile.set_preference('permissions.default.stylesheet', 2)
+firefoxProfile.set_preference('permissions.default.stylesheet', 1)
 
 ## images
 firefoxProfile.set_preference('permissions.default.image', 2)
@@ -107,7 +107,7 @@ def parse_agoda():
     site_title = "agoda"
     browser.get("https://www.agoda.com/taal-vista-hotel/hotel/tagaytay-ph.html")
     page_number = 0
-    while page_number < 3:
+    while page_number < 5:
         try:
             page_number += 1
             print("===================AGODA PAGE NUMBER: " + str(page_number))
@@ -125,21 +125,24 @@ def parse_tripadvisor():
     browser.get(
     "https://www.tripadvisor.com.ph/Hotel_Review-g317121-d320846-Reviews-Taal_Vista_Hotel-Tagaytay_Cavite_Province_Calabarzon_Region_Luzon.html")
 
-
     page_number = 0
-    while page_number < 3:
+    while page_number < 5:
         try:
             page_number += 1
             print("===================TRIPADVISOR PAGE NUMBER: " + str(page_number))
             if page_number > 1:
-                next_button = browser.find_element_by_css_selector("span[data-page-number='" + str(page_number) + "']")
-                next_button.click()
+                if browser_wait.until(EC.visibility_of_all_elements_located((By.CLASS_NAME, "pageNum"))):
+                    next_button = browser.find_element_by_css_selector("span[data-page-number='" + str(page_number) + "']")
+                    next_button.click()
 
             browser_wait.until(EC.visibility_of_all_elements_located((By.CLASS_NAME, "noQuotes")))
-            more_button = browser_wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR, "span.taLnk.ulBlueLinks")))
-            more_button.click()
+            if browser_wait.until(EC.visibility_of_all_elements_located((By.CSS_SELECTOR, "span.taLnk.ulBlueLinks"))):
+                more_button = browser.find_element_by_css_selector("span.taLnk.ulBlueLinks")
+                more_button.click()
             browser_wait.until(EC.visibility_of_all_elements_located((By.CLASS_NAME, "noQuotes")))
-
+            browser_wait.until(EC.visibility_of_all_elements_located((By.CSS_SELECTOR, tripad_revcomment_element)))
+            browser_wait.until(EC.visibility_of_all_elements_located((By.CSS_SELECTOR, tripad_revscore_element)))
+            browser_wait.until(EC.visibility_of_all_elements_located((By.CSS_SELECTOR, tripad_revdate_element)))
             parse_reviews(site_title, tripad_revtitle_element, tripad_revcomment_element, tripad_revscore_element, tripad_revdate_element)
         except Exception as e:
             print(e)
@@ -148,7 +151,7 @@ def parse_tripadvisor():
 
 if __name__ == "__main__":
     parse_agoda()
-    parse_tripadvisor()
+    #parse_tripadvisor()
 
 
 
