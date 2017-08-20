@@ -57,7 +57,7 @@ def parse_reviews():
 
 def main():
     browser.get("https://www.agoda.com/taal-vista-hotel/hotel/tagaytay-ph.html")
-    browser_wait = WebDriverWait(browser, 100)
+    browser_wait = WebDriverWait(browser, 10000)
     page_number = 0
     while page_number < 3:
         try:
