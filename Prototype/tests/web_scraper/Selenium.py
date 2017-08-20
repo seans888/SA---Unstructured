@@ -109,6 +109,7 @@ def parse_reviews(website_name,review_title_element, review_comment_element, rev
                   + "\n    Date: " + review_list[idx].review_date
                   + "\n    Website: " + review_list[idx].review_site)
 
+
 def parse_agoda():
     site_title = "agoda"
     browser.get("https://www.agoda.com/taal-vista-hotel/hotel/tagaytay-ph.html")
