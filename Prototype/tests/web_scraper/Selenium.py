@@ -22,8 +22,19 @@ firefoxProfile.set_preference('dom.ipc.plugins.enabled.libflashplayer.so','False
 
 ## Use the driver
 browser = webdriver.Firefox(firefoxProfile, executable_path="../../driver/geckodriver.exe")
-browser.set_window_size(200,400)
+#browser.set_window_size(200,400)
+browser_wait = WebDriverWait(browser, 120)
 
+
+agoda_revtitle_element = "comment-title-text"
+agoda_revcomment_element = "div[data-selenium='reviews-comments']"
+agoda_revscore_element = ".comment-score span"
+agoda_revdate_element = "span[name='reviewdate']"
+
+tripad_revtitle_element = "noQuotes"
+tripad_revcomment_element = ".wrap > .prw_rup .partial_entry"
+tripad_revscore_element = ".review-container span.ui_bubble_rating"
+tripad_revdate_element = ".ratingDate"
 
 
 class Review:
@@ -34,48 +45,110 @@ class Review:
         self.review_date = review_date
 
 
-def parse_reviews():
-    review_titles = browser.find_elements_by_class_name("comment-title-text")
-    review_comments = browser.find_elements_by_class_name("comment-text")
-    review_scores = browser.find_elements_by_class_name("comment-score")
-    review_dates = browser.find_elements_by_name('reviewdate')
+def parse_reviews(website_name,review_title_element, review_comment_element, review_score_element, review_date_element):
+
+    review_titles = browser.find_elements_by_class_name(review_title_element)
+    review_comments = browser.find_elements_by_css_selector(review_comment_element)
+    review_scores = browser.find_elements_by_css_selector(review_score_element)
+    review_dates = browser.find_elements_by_css_selector(review_date_element)
 
     review_list = []
-
     for idx in range(len(review_titles)):
         review_list.append(idx)
 
-    for idx in range(len(review_list)):
-        review_list[idx] = Review(review_titles[idx], review_comments[idx], review_scores[idx], review_dates[idx])
+    if website_name == "agoda":
+        for idx in range(len(review_list)):
+            review_list[idx] = Review(review_titles[idx], review_comments[idx], review_scores[idx], review_dates[idx])
 
-        print("Review: "+ str(idx + 1)
-              + "\n    Title: " + review_list[idx].review_title.text
-              + "\n    Comment: " + review_list[idx].review_comment.text
-              + "\n    Score: " + review_list[idx].review_score.text
-              + "\n    Date: " + review_list[idx].review_date.text)
+        for idx in range(len(review_list)):
+            print("Review: "+ str(idx + 1)
+                    + "\n    Title: " + review_list[idx].review_title.text
+                    + "\n    Comment: " + review_list[idx].review_comment.text
+                    + "\n    Score: " + review_list[idx].review_score.text
+                    + "\n    Date: " + review_list[idx].review_date.text)
+
+    elif website_name == "tripadvisor":
+        trip_scores = []
+        for idx in review_scores:
+            trip_scores.append(idx)
+        review_scores.clear()
+        for idx in trip_scores:
+            bubble_score = idx.get_attribute("class")
+            if bubble_score == "ui_bubble_rating bubble_50":
+                review_scores.append("5")
+            elif bubble_score == "ui_bubble_rating bubble_40":
+                review_scores.append("4")
+            elif bubble_score == "ui_bubble_rating bubble_30":
+                review_scores.append("3")
+            elif bubble_score == "ui_bubble_rating bubble_20":
+                review_scores.append("2")
+            else:
+                review_scores.append("1")
+
+        trip_dates = []
+        for idx in review_dates:
+            trip_dates.append(idx)
+        review_dates.clear()
+        for idx in trip_dates:
+            review_dates.append(idx.get_attribute("title"))
+
+        for idx in range(len(review_list)):
+            review_list[idx] = Review(review_titles[idx], review_comments[idx], review_scores[idx], review_dates[idx])
+
+        for idx in range(len(review_list)):
+            print("Review: " + str(idx + 1)
+                  + "\n    Title: " + review_list[idx].review_title.text
+                  + "\n    Comment: " + review_list[idx].review_comment.text
+                  + "\n    Score: " + review_list[idx].review_score
+                  + "\n    Date: " + review_list[idx].review_date)
 
 
-def main():
+def parse_agoda():
+    site_title = "agoda"
     browser.get("https://www.agoda.com/taal-vista-hotel/hotel/tagaytay-ph.html")
-    browser_wait = WebDriverWait(browser, 10)
     page_number = 0
     while page_number < 3:
         try:
             page_number += 1
-            print("===================PAGE NUMBER: " + str(page_number))
+            print("===================AGODA PAGE NUMBER: " + str(page_number))
             if page_number > 1:
                 next_button = browser.find_element_by_css_selector("a[data-page='" + str(page_number) + "']")
                 next_button.click()
             browser_wait.until(EC.visibility_of_all_elements_located((By.CLASS_NAME, "individual-review-item")))
-            parse_reviews()
+            parse_reviews(site_title, agoda_revtitle_element, agoda_revcomment_element, agoda_revscore_element, agoda_revdate_element)
         except Exception as e:
             print(e)
 
-    browser.close()
+
+def parse_tripadvisor():
+    site_title = "tripadvisor"
+    browser.get(
+    "https://www.tripadvisor.com.ph/Hotel_Review-g317121-d320846-Reviews-Taal_Vista_Hotel-Tagaytay_Cavite_Province_Calabarzon_Region_Luzon.html")
+
+
+    page_number = 0
+    while page_number < 3:
+        try:
+            page_number += 1
+            print("===================TRIPADVISOR PAGE NUMBER: " + str(page_number))
+            if page_number > 1:
+                next_button = browser.find_element_by_css_selector("span[data-page-number='" + str(page_number) + "']")
+                next_button.click()
+
+            browser_wait.until(EC.visibility_of_all_elements_located((By.CLASS_NAME, "noQuotes")))
+            more_button = browser_wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR, "span.taLnk.ulBlueLinks")))
+            more_button.click()
+            browser_wait.until(EC.visibility_of_all_elements_located((By.CLASS_NAME, "noQuotes")))
+
+            parse_reviews(site_title, tripad_revtitle_element, tripad_revcomment_element, tripad_revscore_element, tripad_revdate_element)
+        except Exception as e:
+            print(e)
+
 
 
 if __name__ == "__main__":
-    main()
+    parse_agoda()
+    parse_tripadvisor()
 
 
 
