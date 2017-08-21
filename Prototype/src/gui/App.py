@@ -1,12 +1,13 @@
 import time
 import sqlite3
 
-
 try:
     conn = sqlite3.connect('../../db/example.db')
     c = conn.cursor()
 except Exception as e:
     print(e)
+
+from subprocess import call
 
 
 def view_analysis():
@@ -79,10 +80,14 @@ def view_analysis():
 def start_app():
     print("Performing Web Data Extraction...")
     time.sleep(3)
-    exec(open('../web_scraper/Selenium.py').read())
+
+    call('python ../web_scraper/Selenium.py', shell=True)
+
     print("Performing Sentiment Analysis...")
     time.sleep(3)
-    exec(open('../sentiment_analyzer/sentiment_analyzer.py').read())
+
+    call('python ../sentiment_analyzer/sentiment_analyzer.py', shell=True)
+
     print("=================== ANALYSIS Result ===================")
     view_analysis()
 
