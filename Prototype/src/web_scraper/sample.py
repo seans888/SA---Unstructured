@@ -28,20 +28,11 @@ browser = webdriver.Firefox(firefoxProfile, executable_path="../../driver/geckod
 #browser.set_window_size(200,400)
 browser_wait = WebDriverWait(browser, 120)
 
-agoda_revtitle_element = ".comment-title-text"
-agoda_revcomment_element = "div[data-selenium='reviews-comments']"
-agoda_revscore_element = ".comment-score span"
-agoda_revdate_element = "span[name='reviewdate']"
-
 tripad_revtitle_element = ".noQuotes"
 tripad_revcomment_element = ".wrap > .prw_rup .partial_entry"
 tripad_revscore_element = ".review-container span.ui_bubble_rating"
 tripad_revdate_element = ".ratingDate"
 
-booking_revtitle_element = ".sliding-panel-widget-content .review_item_header_content"
-booking_revcomment_element = ".sliding-panel-widget-content .review_item_review_content p"
-booking_revscore_element = ".sliding-panel-widget-content .review-score-badge"
-booking_revdate_element = ".sliding-panel-widget-content .review_item_date"
 
 
 class Review:
@@ -113,32 +104,6 @@ def parse_reviews(website_name,review_title_element, review_comment_element, rev
                   + "\n    Website: " + review_list[idx].review_site)
 
 
-def parse_agoda():
-    site_title = "agoda"
-    browser.get("https://www.agoda.com/taal-vista-hotel/hotel/tagaytay-ph.html")
-    page_number = 0
-
-    try:
-        browser.find_element_by_css_selector(".cancel").click()
-    except NoSuchElementException:
-        pass
-
-    try:
-        browser.find_element_by_css_selector("#promoinbox-popup-close-icon").click()
-    except NoSuchElementException:
-        pass
-
-    while page_number < 5:
-        try:
-            page_number += 1
-            print("===================AGODA PAGE NUMBER: " + str(page_number))
-            if page_number > 1:
-                next_button = browser.find_element_by_css_selector("a[data-page='" + str(page_number) + "']")
-                next_button.click()
-            browser_wait.until(EC.visibility_of_all_elements_located((By.CLASS_NAME, "individual-review-item")))
-            parse_reviews(site_title, agoda_revtitle_element, agoda_revcomment_element, agoda_revscore_element, agoda_revdate_element)
-        except Exception as e:
-            print(e)
 
 
 def parse_tripadvisor():
@@ -169,33 +134,6 @@ def parse_tripadvisor():
             print(e)
 
 
-def parse_booking():
-    site_title = "booking"
-    browser.get("https://www.booking.com/hotel/ph/taal-vista.html#tab-reviews")
-    page_number = 0
-    while page_number < 5:
-        try:
-            page_number += 1
-            print("===================BOOKING PAGE NUMBER: " + str(page_number))
-            if page_number > 1:
-                browser_wait.until(EC.visibility_of_element_located((By.ID, "review_next_page_link")))
-                next_button = browser.find_element_by_css_selector("a#review_next_page_link")
-                next_button.click()
-
-            browser_wait.until(EC.visibility_of_all_elements_located((By.CSS_SELECTOR, ".sliding-panel-widget-content .review_item")))
-            time.sleep(5)
-            parse_reviews(site_title, booking_revtitle_element, booking_revcomment_element, booking_revscore_element, booking_revdate_element)
-
-        except Exception as e:
-            print(e)
-
-
 if __name__ == "__main__":
-    parse_agoda()
     parse_tripadvisor()
-    parse_booking()
-
-
-
-
 
