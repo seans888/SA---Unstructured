@@ -19,14 +19,13 @@ rev_Date = '12-30-2016'
 
 
 # for insert sentiments
-positive = '1'
-negative = '2'
+sentiments = 'negative'
 
 
 # for insert Website
 web_Code = '0100'
 web_Name = 'Agoda'
-web_Url  = 'Agoda.com'
+web_Url = 'Agoda.com'
 # insert commands--------------------------------------------------------------------------
 
 # Insert report
@@ -37,12 +36,12 @@ print('report values inserted')
 
 # Insert review
 cursor.execute('''INSERT INTO Review(rev_Code, rev_title, rev_Comment, rev_Rating, rev_Date, Website_web_Code)
-                  VALUES(?,?,?,?,?,?)''', (rev_Code, rev_Title, rev_Comment, rev_Rating, rev_Date, web_Code ))
+                  VALUES(?,?,?,?,?,?)''', (rev_Code, rev_Title, rev_Comment, rev_Rating, rev_Date, web_Code))
 print('review values inserted')
 
 # Insert sentiments
-cursor.execute('''INSERT INTO Sentiments(positive, negative, rep_Code, rev_Code)
-                  VALUES(?,?,?,?)''', (positive, negative, rep_Code, rev_Code))
+cursor.execute('''INSERT INTO Sentiments(sentiment, rep_Code, rev_Code)
+                  VALUES(?,?,?)''', (sentiments, rep_Code, rev_Code))
 print('sentiment values inserted')
 
 # Insert website

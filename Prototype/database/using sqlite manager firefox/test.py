@@ -46,8 +46,7 @@ cursor.execute('''
 cursor.execute('''
                
 CREATE TABLE "Sentiments"(
-  "positive" BINARY,
-  "negative" BINARY,
+  "sentiment" VARCHAR(45),
   "rep_Code" INTEGER NOT NULL,
   "rev_Code" INTEGER NOT NULL,
   CONSTRAINT "rep_Code"
