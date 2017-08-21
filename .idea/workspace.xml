@@ -2,31 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6fb4d7cd-4696-45d4-bdd8-41ee1693aaf3" name="Default" comment="Selenium: minor fix for agoda parser">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Prototype/db/example.db" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Prototype/src/web_scraper/geckodriver.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Prototype/src/web_scraper/sample.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Prototype/database/.idea/database.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Prototype/database/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Prototype/database/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Prototype/database/.idea/vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Prototype/database/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Prototype/database/db.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Prototype/database/db.sqlite" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Prototype/database/sql.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Prototype/database/using sqlite manager firefox/insert query.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Prototype/database/using sqlite manager firefox/test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Prototype/database/using sqlite manager firefox/test.sqlite" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Prototype/db/main.db" afterPath="$PROJECT_DIR$/Prototype/db/main.db" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Prototype/tests/sentiment_analyzer/hotel_reviews.txt" afterPath="$PROJECT_DIR$/Prototype/src/sentiment_analyzer/hotel_reviews.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Prototype/tests/sentiment_analyzer/neg_dict.txt" afterPath="$PROJECT_DIR$/Prototype/src/sentiment_analyzer/neg_dict.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Prototype/tests/sentiment_analyzer/pos_dict.txt" afterPath="$PROJECT_DIR$/Prototype/src/sentiment_analyzer/pos_dict.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Prototype/tests/sentiment_analyzer/sentiment_analyzer.py" afterPath="$PROJECT_DIR$/Prototype/src/sentiment_analyzer/sentiment_analyzer.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Prototype/tests/sentiment_analyzer/speech_tagging.py" afterPath="$PROJECT_DIR$/Prototype/src/sentiment_analyzer/speech_tagging.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Prototype/tests/sentiment_analyzer/stemming.py" afterPath="$PROJECT_DIR$/Prototype/src/sentiment_analyzer/stemming.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Prototype/tests/sentiment_analyzer/stopwords.py" afterPath="$PROJECT_DIR$/Prototype/src/sentiment_analyzer/stopwords.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Prototype/tests/sentiment_analyzer/tokenizing-sent.py" afterPath="$PROJECT_DIR$/Prototype/src/sentiment_analyzer/tokenizing-sent.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Prototype/tests/web_scraper/Selenium.py" afterPath="$PROJECT_DIR$/Prototype/src/web_scraper/Selenium.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -38,13 +14,14 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/SA___Unstructured$tripadvisor.coverage" NAME="tripadvisor Coverage Results" MODIFIED="1503208756429" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Prototype/tests/web_scraper" />
     <SUITE FILE_PATH="coverage/SA___Unstructured$agoda.coverage" NAME="agoda Coverage Results" MODIFIED="1503293324067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Prototype/tests/web_scraper" />
+    <SUITE FILE_PATH="coverage/SA___Unstructured$App.coverage" NAME="App Coverage Results" MODIFIED="1503342039575" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Prototype/src/gui" />
     <SUITE FILE_PATH="coverage/SA___Unstructured$Selenium__1_.coverage" NAME="Selenium (1) Coverage Results" MODIFIED="1503330589874" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Prototype/src/web_scraper" />
     <SUITE FILE_PATH="coverage/SA___Unstructured$booking.coverage" NAME="booking Coverage Results" MODIFIED="1503238201258" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Prototype/tests/web_scraper" />
     <SUITE FILE_PATH="coverage/SA___Unstructured$pickle.coverage" NAME="pickle Coverage Results" MODIFIED="1503061121304" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Prototype/tests/web_scraper" />
     <SUITE FILE_PATH="coverage/SA___Unstructured$sentiment_analyzer__1_.coverage" NAME="sentiment_analyzer (1) Coverage Results" MODIFIED="1503238652169" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Prototype/tests/sentiment_analyzer" />
     <SUITE FILE_PATH="coverage/SA___Unstructured$sample.coverage" NAME="sample Coverage Results" MODIFIED="1503328955974" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Prototype/src/web_scraper" />
-    <SUITE FILE_PATH="coverage/SA___Unstructured$Selenium.coverage" NAME="Selenium Coverage Results" MODIFIED="1503321088970" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Prototype/tests/web_scraper" />
-    <SUITE FILE_PATH="coverage/SA___Unstructured$sentiment_analyzer.coverage" NAME="sentiment_analyzer Coverage Results" MODIFIED="1503238206482" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Prototype/src/sentiment_analyzer" />
+    <SUITE FILE_PATH="coverage/SA___Unstructured$Selenium.coverage" NAME="Selenium Coverage Results" MODIFIED="1503330928593" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Prototype/src/web_scraper" />
+    <SUITE FILE_PATH="coverage/SA___Unstructured$sentiment_analyzer.coverage" NAME="sentiment_analyzer Coverage Results" MODIFIED="1503339194399" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Prototype/src/sentiment_analyzer" />
   </component>
   <component name="FileColors">
     <fileColor scope="Non-Project Files (Material Default)" color="2E3C43" />
@@ -55,14 +32,56 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Selenium.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Selenium.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Prototype/src/web_scraper/Selenium.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="236" column="23" lean-forward="true" selection-start-line="236" selection-start-column="23" selection-end-line="236" selection-end-column="23" />
+            <state relative-caret-position="-1870">
+              <caret line="13" column="12" lean-forward="true" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
-                <marker date="1503330693865" expanded="true" signature="707:852" ph="INSERT INTO review... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sentiment_analyzer.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Prototype/src/sentiment_analyzer/sentiment_analyzer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="21" column="46" lean-forward="true" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+                <marker date="1503339187033" expanded="true" signature="374:406" ph="INSERT INTO sentiment... " />
+                <marker date="1503339187033" expanded="true" signature="374:445" ph="INSERT INTO sentiment... " />
+                <marker date="1503339187033" expanded="true" signature="528:576" ph="SELECT repor... report" />
+                <marker date="1503339187033" expanded="true" signature="528:590" ph="SELECT repor... report" />
+                <marker date="1503339187033" expanded="true" signature="623:624" ph="SELECT repor... report" />
+                <marker date="1503339187033" expanded="true" signature="741:857" ph="INSERT INTO sentiment... " />
+                <marker date="1503339187033" expanded="true" signature="1070:1114" ph="SELECT revie... review" />
+                <marker date="1503339187033" expanded="true" signature="1352:1389" ph="SELECT words... postive_dictionary" />
+                <marker date="1503339187033" expanded="true" signature="1560:1597" ph="SELECT words... negative_dictionary" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="App.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Prototype/src/gui/App.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="90" column="0" lean-forward="true" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+                <marker date="1503342038075" expanded="true" signature="193:521" ph="SELECT COUNT... sentiment" />
+                <marker date="1503342038075" expanded="true" signature="635:963" ph="SELECT COUNT... sentiment" />
+                <marker date="1503342038075" expanded="true" signature="1109:1437" ph="SELECT COUNT... sentiment" />
+                <marker date="1503342038075" expanded="true" signature="1577:1905" ph="SELECT COUNT... sentiment" />
+                <marker date="1503342038075" expanded="true" signature="2059:2387" ph="SELECT COUNT... sentiment" />
+                <marker date="1503342038075" expanded="true" signature="2519:2847" ph="SELECT COUNT... sentiment" />
+                <marker date="1503342038075" expanded="true" signature="2993:3049" ph="SELECT COUNT... sentiment" />
+                <marker date="1503342038075" expanded="true" signature="2993:3060" ph="SELECT COUNT... sentiment" />
+                <marker date="1503342038075" expanded="true" signature="2993:3064" ph="SELECT COUNT... sentiment" />
+                <marker date="1503342038075" expanded="true" signature="3151:3218" ph="SELECT COUNT... sentiment" />
               </folding>
             </state>
           </provider>
@@ -87,12 +106,13 @@
         <option value="$PROJECT_DIR$/Prototype/tests/web_scraper/pickle.py" />
         <option value="$PROJECT_DIR$/Prototype/tests/web_scraper/tripadvisor.py" />
         <option value="$PROJECT_DIR$/Prototype/tests/web_scraper/booking.py" />
-        <option value="$PROJECT_DIR$/Prototype/src/sentiment_analyzer/sentiment_analyzer.py" />
         <option value="$PROJECT_DIR$/Prototype/tests/sentiment_analyzer/sentiment_analyzer.py" />
         <option value="$PROJECT_DIR$/Prototype/tests/web_scraper/agoda.py" />
         <option value="$PROJECT_DIR$/Prototype/tests/web_scraper/Selenium.py" />
         <option value="$PROJECT_DIR$/Prototype/src/web_scraper/sample.py" />
         <option value="$PROJECT_DIR$/Prototype/src/web_scraper/Selenium.py" />
+        <option value="$PROJECT_DIR$/Prototype/src/sentiment_analyzer/sentiment_analyzer.py" />
+        <option value="$PROJECT_DIR$/Prototype/src/gui/App.py" />
       </list>
     </option>
   </component>
@@ -126,6 +146,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -149,6 +170,13 @@
               <item name="SA---Unstructured" type="462c0819:PsiDirectoryNode" />
               <item name="Prototype" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sentiment_analyzer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SA---Unstructured" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SA---Unstructured" type="462c0819:PsiDirectoryNode" />
+              <item name="Prototype" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="web_scraper" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -156,7 +184,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -177,8 +204,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Selenium (1)">
-    <configuration name="Selenium (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.App">
+    <configuration name="App" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Prototype/src/gui" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="SA---Unstructured" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Prototype/src/gui/App.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="Selenium" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -192,24 +237,6 @@
       <module name="SA---Unstructured" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Prototype/src/web_scraper/Selenium.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
-    <configuration name="Selenium" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Prototype/tests/web_scraper" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="SA---Unstructured" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Prototype/tests/web_scraper/Selenium.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -355,24 +382,6 @@
       <option name="_new_target" value="&quot;&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
-    <configuration name="agoda" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Prototype/tests/web_scraper" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="SA---Unstructured" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Prototype/tests/web_scraper/agoda.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
     <configuration name="sample" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -391,38 +400,36 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="sentiment_analyzer (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="sentiment_analyzer" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Prototype/tests/sentiment_analyzer" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Prototype/src/sentiment_analyzer" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="SA---Unstructured" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Prototype/tests/sentiment_analyzer/sentiment_analyzer.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Prototype/src/sentiment_analyzer/sentiment_analyzer.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.Selenium" />
-      <item index="1" class="java.lang.String" itemvalue="Python.sentiment_analyzer (1)" />
-      <item index="2" class="java.lang.String" itemvalue="Python.agoda" />
-      <item index="3" class="java.lang.String" itemvalue="Python.sample" />
-      <item index="4" class="java.lang.String" itemvalue="Python.Selenium (1)" />
+    <list size="4">
+      <item index="0" class="java.lang.String" itemvalue="Python.sample" />
+      <item index="1" class="java.lang.String" itemvalue="Python.Selenium" />
+      <item index="2" class="java.lang.String" itemvalue="Python.sentiment_analyzer" />
+      <item index="3" class="java.lang.String" itemvalue="Python.App" />
     </list>
     <recent_temporary>
-      <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.Selenium (1)" />
-        <item index="1" class="java.lang.String" itemvalue="Python.sample" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Python.App" />
+        <item index="1" class="java.lang.String" itemvalue="Python.sentiment_analyzer" />
         <item index="2" class="java.lang.String" itemvalue="Python.Selenium" />
-        <item index="3" class="java.lang.String" itemvalue="Python.agoda" />
-        <item index="4" class="java.lang.String" itemvalue="Python.sentiment_analyzer (1)" />
+        <item index="3" class="java.lang.String" itemvalue="Python.sample" />
       </list>
     </recent_temporary>
   </component>
@@ -503,7 +510,14 @@
       <option name="project" value="LOCAL" />
       <updated>1503294218134</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Prototype Component Integration Complete">
+      <created>1503342284239</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1503342284239</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -512,11 +526,11 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18228404" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280507" sideWeight="0.5058565" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33597463" sideWeight="0.50951684" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280507" sideWeight="0.4941435" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.49267936" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33597463" sideWeight="0.49048316" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -548,7 +562,8 @@
     <MESSAGE value="Selenium: minor update" />
     <MESSAGE value="Selenium: Added parser for Agoda" />
     <MESSAGE value="Selenium: minor fix for agoda parser" />
-    <option name="LAST_COMMIT_MESSAGE" value="Selenium: minor fix for agoda parser" />
+    <MESSAGE value="Prototype Component Integration Complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="Prototype Component Integration Complete" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -563,7 +578,16 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
-            <marker date="1503330693865" expanded="true" signature="707:852" ph="INSERT INTO review... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Prototype/src/web_scraper/Selenium.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -607,7 +631,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Prototype/tests/web_scraper/booking.py" />
     <entry file="file://$PROJECT_DIR$/Prototype/src/sentiment_analyzer/pos_dict.txt" />
-    <entry file="file://$PROJECT_DIR$/Prototype/src/sentiment_analyzer/sentiment_analyzer.py" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_sent_analyzer.zip/sentiment_analyzer.py" />
     <entry file="file://$PROJECT_DIR$/Prototype/tests/sentiment_analyzer/sentiment_analyzer.py" />
     <entry file="file://$PROJECT_DIR$/Prototype/tests/web_scraper/agoda.py" />
@@ -619,13 +642,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Prototype/src/sentiment_analyzer/sentiment_analyzer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="21" column="46" lean-forward="true" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+            <marker date="1503339187033" expanded="true" signature="374:406" ph="INSERT INTO sentiment... " />
+            <marker date="1503339187033" expanded="true" signature="374:445" ph="INSERT INTO sentiment... " />
+            <marker date="1503339187033" expanded="true" signature="528:576" ph="SELECT repor... report" />
+            <marker date="1503339187033" expanded="true" signature="528:590" ph="SELECT repor... report" />
+            <marker date="1503339187033" expanded="true" signature="623:624" ph="SELECT repor... report" />
+            <marker date="1503339187033" expanded="true" signature="741:857" ph="INSERT INTO sentiment... " />
+            <marker date="1503339187033" expanded="true" signature="1070:1114" ph="SELECT revie... review" />
+            <marker date="1503339187033" expanded="true" signature="1352:1389" ph="SELECT words... postive_dictionary" />
+            <marker date="1503339187033" expanded="true" signature="1560:1597" ph="SELECT words... negative_dictionary" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Prototype/src/web_scraper/Selenium.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="236" column="23" lean-forward="true" selection-start-line="236" selection-start-column="23" selection-end-line="236" selection-end-column="23" />
+        <state relative-caret-position="-1870">
+          <caret line="13" column="12" lean-forward="true" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
-            <marker date="1503330693865" expanded="true" signature="707:852" ph="INSERT INTO review... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Prototype/src/gui/App.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="90" column="0" lean-forward="true" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+            <marker date="1503342038075" expanded="true" signature="193:521" ph="SELECT COUNT... sentiment" />
+            <marker date="1503342038075" expanded="true" signature="635:963" ph="SELECT COUNT... sentiment" />
+            <marker date="1503342038075" expanded="true" signature="1109:1437" ph="SELECT COUNT... sentiment" />
+            <marker date="1503342038075" expanded="true" signature="1577:1905" ph="SELECT COUNT... sentiment" />
+            <marker date="1503342038075" expanded="true" signature="2059:2387" ph="SELECT COUNT... sentiment" />
+            <marker date="1503342038075" expanded="true" signature="2519:2847" ph="SELECT COUNT... sentiment" />
+            <marker date="1503342038075" expanded="true" signature="2993:3049" ph="SELECT COUNT... sentiment" />
+            <marker date="1503342038075" expanded="true" signature="2993:3060" ph="SELECT COUNT... sentiment" />
+            <marker date="1503342038075" expanded="true" signature="2993:3064" ph="SELECT COUNT... sentiment" />
+            <marker date="1503342038075" expanded="true" signature="3151:3218" ph="SELECT COUNT... sentiment" />
           </folding>
         </state>
       </provider>
