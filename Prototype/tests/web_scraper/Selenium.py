@@ -3,7 +3,10 @@ from selenium.webdriver.firefox.firefox_profile import FirefoxProfile
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import NoSuchElementException
+
 import time
+
 ## get the Firefox profile object
 firefoxProfile = FirefoxProfile()
 
@@ -114,6 +117,17 @@ def parse_agoda():
     site_title = "agoda"
     browser.get("https://www.agoda.com/taal-vista-hotel/hotel/tagaytay-ph.html")
     page_number = 0
+
+    try:
+        browser.find_element_by_css_selector(".cancel").click()
+    except NoSuchElementException:
+        pass
+
+    try:
+        browser.find_element_by_css_selector("#promoinbox-popup-close-icon").click()
+    except NoSuchElementException:
+        pass
+
     while page_number < 5:
         try:
             page_number += 1
@@ -174,6 +188,7 @@ def parse_booking():
 
         except Exception as e:
             print(e)
+
 
 if __name__ == "__main__":
     parse_agoda()
