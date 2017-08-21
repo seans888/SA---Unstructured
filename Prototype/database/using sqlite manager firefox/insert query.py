@@ -16,13 +16,12 @@ rev_Title = 'crappy bedroom'
 rev_Comment = 'the beds made my back hurt'
 rev_Rating = '4'
 rev_Date = '12-30-2016'
-web_Code = '001'
+
 
 # for insert sentiments
 positive = '1'
 negative = '2'
-rep_Code = '001'
-rev_Code = '0010'
+
 
 # for insert Website
 web_Code = '0100'
