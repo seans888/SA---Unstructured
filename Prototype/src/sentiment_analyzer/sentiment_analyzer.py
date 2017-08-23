@@ -1,5 +1,6 @@
 from nltk.tokenize import word_tokenize
 import sqlite3
+import time
 
 from time import strftime
 
@@ -59,38 +60,44 @@ def extract_sentiments(report_id):
     for row in neg_words.fetchall():
         neg_dictionary.append(list(row)[0])
 
-    p1_counter = 0
-    n1_counter = 0
+    pos_counter = 0
+    neg_counter = 0
 
     for idx in range(len(hotel_reviews)):
         review_token = word_tokenize(hotel_reviews[idx])
 
-        for p in review_token:
-            if p in pos_dictionary:
-                p1_counter += 1
+        for token in review_token:
+            if token.lower() in pos_dictionary:
+                pos_counter += 1
 
-            if p in neg_dictionary:
-                n1_counter += 1
+            if token.lower() in neg_dictionary:
+                neg_counter += 1
 
-        if p1_counter > n1_counter:
+        if pos_counter > neg_counter:
             sentiment = "positive"
-        else:
-            sentiment = "negative"
 
-        print("Comment: " + hotel_reviews[idx] + "\n"+
-              "Pos count: " + str(p1_counter) + "\n"+
-              "Neg count: " + str(n1_counter)+ "\n"+
+        elif pos_counter < neg_counter:
+            sentiment = "negative"
+        else:
+            sentiment = "neutral"
+
+        print("======================" + "\n"+
+              "Comment: " + hotel_reviews[idx] + "\n"+
+              "Pos count: " + str(pos_counter) + "\n"+
+              "Neg count: " + str(neg_counter)+ "\n"+
               "Sentiment: "+ sentiment+ "\n"+
               "Report #: " + str(report_id))
 
         insert_to_db(report_id, hotel_review_ids[idx], sentiment)
 
-        p1_counter = 0
-        n1_counter = 0
+        pos_counter = 0
+        neg_counter = 0
 
 
 if __name__ == "__main__":
     report_id = create_report()
+    print("Performing Sentiment Analysis for Report Number: " + str(report_id))
+    time.sleep(5)
     extract_sentiments(report_id)
     conn.close()
 
