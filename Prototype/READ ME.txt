@@ -1,0 +1,8 @@
+Prototype has been created using Python 
+and before running the prototype, make sure you have these installed:
+
+*Selenium
+
+*NLTK:
+- punkt package only
+
