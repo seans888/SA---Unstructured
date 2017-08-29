@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6fb4d7cd-4696-45d4-bdd8-41ee1693aaf3" name="Default" comment="">
+    <list default="true" id="6fb4d7cd-4696-45d4-bdd8-41ee1693aaf3" name="Default" comment="Selenium: fix for sentiment analyzer">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Documentation/Diagrams/~$$Object-Diagram.~vsdx" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Documentation/Diagrams/Component Diagram.PNG" afterPath="$PROJECT_DIR$/Documentation/Diagrams/Component Diagram.PNG" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Documentation/Diagrams/Component Diagram.vpp" afterPath="$PROJECT_DIR$/Documentation/Diagrams/Component Diagram.vpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Prototype/db/example.db" afterPath="$PROJECT_DIR$/Prototype/db/example.db" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Prototype/src/gui/App.py" afterPath="$PROJECT_DIR$/Prototype/src/gui/App.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Prototype/src/gui/geckodriver.log" afterPath="$PROJECT_DIR$/Prototype/src/gui/geckodriver.log" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,13 +20,13 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/SA___Unstructured$tripadvisor.coverage" NAME="tripadvisor Coverage Results" MODIFIED="1503208756429" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Prototype/tests/web_scraper" />
     <SUITE FILE_PATH="coverage/SA___Unstructured$agoda.coverage" NAME="agoda Coverage Results" MODIFIED="1503293324067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Prototype/tests/web_scraper" />
-    <SUITE FILE_PATH="coverage/SA___Unstructured$App.coverage" NAME="App Coverage Results" MODIFIED="1503485311590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Prototype/src/gui" />
+    <SUITE FILE_PATH="coverage/SA___Unstructured$App.coverage" NAME="App Coverage Results" MODIFIED="1503910795002" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Prototype/src/gui" />
     <SUITE FILE_PATH="coverage/SA___Unstructured$Selenium__1_.coverage" NAME="Selenium (1) Coverage Results" MODIFIED="1503330589874" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Prototype/src/web_scraper" />
     <SUITE FILE_PATH="coverage/SA___Unstructured$booking.coverage" NAME="booking Coverage Results" MODIFIED="1503238201258" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Prototype/tests/web_scraper" />
     <SUITE FILE_PATH="coverage/SA___Unstructured$pickle.coverage" NAME="pickle Coverage Results" MODIFIED="1503061121304" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Prototype/tests/web_scraper" />
     <SUITE FILE_PATH="coverage/SA___Unstructured$sentiment_analyzer__1_.coverage" NAME="sentiment_analyzer (1) Coverage Results" MODIFIED="1503238652169" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Prototype/tests/sentiment_analyzer" />
-    <SUITE FILE_PATH="coverage/SA___Unstructured$sample.coverage" NAME="sample Coverage Results" MODIFIED="1503328955974" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Prototype/src/web_scraper" />
-    <SUITE FILE_PATH="coverage/SA___Unstructured$Selenium.coverage" NAME="Selenium Coverage Results" MODIFIED="1503330928593" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Prototype/src/web_scraper" />
+    <SUITE FILE_PATH="coverage/SA___Unstructured$sample.coverage" NAME="sample Coverage Results" MODIFIED="1503910640669" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Prototype/src/web_scraper" />
+    <SUITE FILE_PATH="coverage/SA___Unstructured$Selenium.coverage" NAME="Selenium Coverage Results" MODIFIED="1503907245995" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Prototype/src/web_scraper" />
     <SUITE FILE_PATH="coverage/SA___Unstructured$sentiment_analyzer.coverage" NAME="sentiment_analyzer Coverage Results" MODIFIED="1503485289450" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Prototype/src/sentiment_analyzer" />
   </component>
   <component name="FileColors">
@@ -32,24 +38,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Selenium.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Prototype/src/web_scraper/Selenium.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-459">
-              <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#30#0" expanded="true" />
-                <marker date="1503344250464" expanded="true" signature="707:852" ph="INSERT INTO review... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="sentiment_analyzer.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Prototype/src/sentiment_analyzer/sentiment_analyzer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1020">
-              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <state relative-caret-position="204">
+              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
                 <marker date="1503485248967" expanded="true" signature="386:418" ph="INSERT INTO sentiment... " />
@@ -66,28 +59,53 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="App.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="App.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Prototype/src/gui/App.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2244">
-              <caret line="132" column="79" lean-forward="true" selection-start-line="132" selection-start-column="79" selection-end-line="132" selection-end-column="79" />
+            <state relative-caret-position="187">
+              <caret line="125" column="0" lean-forward="false" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
-                <marker date="1503484914552" expanded="true" signature="243:577" ph="SELECT COUNT... sentiment" />
-                <marker date="1503484914552" expanded="true" signature="725:1059" ph="SELECT COUNT... sentiment" />
-                <marker date="1503484914552" expanded="true" signature="1208:1542" ph="SELECT COUNT... sentiment" />
-                <marker date="1503484914552" expanded="true" signature="1707:2041" ph="SELECT COUNT... sentiment" />
-                <marker date="1503484914552" expanded="true" signature="2202:2536" ph="SELECT COUNT... sentiment" />
-                <marker date="1503484914552" expanded="true" signature="2697:3031" ph="SELECT COUNT... sentiment" />
-                <marker date="1503484914552" expanded="true" signature="3204:3538" ph="SELECT COUNT... sentiment" />
-                <marker date="1503484914552" expanded="true" signature="3691:4025" ph="SELECT COUNT... sentiment" />
-                <marker date="1503484914552" expanded="true" signature="4178:4512" ph="SELECT COUNT... sentiment" />
-                <marker date="1503484914552" expanded="true" signature="4678:4804" ph="SELECT COUNT... sentiment" />
-                <marker date="1503484914552" expanded="true" signature="4678:4815" ph="SELECT COUNT... sentiment" />
-                <marker date="1503484914552" expanded="true" signature="4678:4849" ph="SELECT COUNT... sentiment" />
-                <marker date="1503484914552" expanded="true" signature="4678:4853" ph="SELECT COUNT... sentiment" />
-                <marker date="1503484914552" expanded="true" signature="4961:5132" ph="SELECT COUNT... sentiment" />
-                <marker date="1503484914552" expanded="true" signature="5244:5415" ph="SELECT COUNT... sentiment" />
+                <marker date="1503908323799" expanded="true" signature="243:577" ph="SELECT COUNT... sentiment" />
+                <marker date="1503908323799" expanded="true" signature="725:1059" ph="SELECT COUNT... sentiment" />
+                <marker date="1503908323799" expanded="true" signature="1208:1542" ph="SELECT COUNT... sentiment" />
+                <marker date="1503908323799" expanded="true" signature="1707:2041" ph="SELECT COUNT... sentiment" />
+                <marker date="1503908323799" expanded="true" signature="2202:2536" ph="SELECT COUNT... sentiment" />
+                <marker date="1503908323799" expanded="true" signature="2697:3031" ph="SELECT COUNT... sentiment" />
+                <marker date="1503908323799" expanded="true" signature="3204:3538" ph="SELECT COUNT... sentiment" />
+                <marker date="1503908323799" expanded="true" signature="3691:4025" ph="SELECT COUNT... sentiment" />
+                <marker date="1503908323799" expanded="true" signature="4178:4512" ph="SELECT COUNT... sentiment" />
+                <marker date="1503908323799" expanded="true" signature="4678:4804" ph="SELECT COUNT... sentiment" />
+                <marker date="1503908323799" expanded="true" signature="4678:4815" ph="SELECT COUNT... sentiment" />
+                <marker date="1503908323799" expanded="true" signature="4678:4849" ph="SELECT COUNT... sentiment" />
+                <marker date="1503908323799" expanded="true" signature="4961:5132" ph="SELECT COUNT... sentiment" />
+                <marker date="1503908323799" expanded="true" signature="5244:5415" ph="SELECT COUNT... sentiment" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Selenium.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Prototype/src/web_scraper/Selenium.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2414">
+              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#30#0" expanded="true" />
+                <marker date="1503908859642" expanded="true" signature="707:852" ph="INSERT INTO review... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sample.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Prototype/src/web_scraper/sample.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="164">
+              <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#30#0" expanded="true" />
+                <marker date="1503910639367" expanded="true" signature="851:996" ph="INSERT INTO review... " />
               </folding>
             </state>
           </provider>
@@ -115,10 +133,11 @@
         <option value="$PROJECT_DIR$/Prototype/tests/sentiment_analyzer/sentiment_analyzer.py" />
         <option value="$PROJECT_DIR$/Prototype/tests/web_scraper/agoda.py" />
         <option value="$PROJECT_DIR$/Prototype/tests/web_scraper/Selenium.py" />
-        <option value="$PROJECT_DIR$/Prototype/src/web_scraper/sample.py" />
-        <option value="$PROJECT_DIR$/Prototype/src/web_scraper/Selenium.py" />
-        <option value="$PROJECT_DIR$/Prototype/src/gui/App.py" />
         <option value="$PROJECT_DIR$/Prototype/src/sentiment_analyzer/sentiment_analyzer.py" />
+        <option value="$PROJECT_DIR$/Prototype/src/lol.py" />
+        <option value="$PROJECT_DIR$/Prototype/src/gui/App.py" />
+        <option value="$PROJECT_DIR$/Prototype/src/web_scraper/Selenium.py" />
+        <option value="$PROJECT_DIR$/Prototype/src/web_scraper/sample.py" />
       </list>
     </option>
   </component>
@@ -152,6 +171,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -168,14 +188,13 @@
               <item name="SA---Unstructured" type="b2602c69:ProjectViewProjectNode" />
               <item name="SA---Unstructured" type="462c0819:PsiDirectoryNode" />
               <item name="Prototype" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="driver" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SA---Unstructured" type="b2602c69:ProjectViewProjectNode" />
               <item name="SA---Unstructured" type="462c0819:PsiDirectoryNode" />
               <item name="Prototype" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="sentiment_analyzer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SA---Unstructured" type="b2602c69:ProjectViewProjectNode" />
@@ -189,7 +208,6 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -433,9 +451,9 @@
     <recent_temporary>
       <list size="4">
         <item index="0" class="java.lang.String" itemvalue="Python.App" />
-        <item index="1" class="java.lang.String" itemvalue="Python.sentiment_analyzer" />
+        <item index="1" class="java.lang.String" itemvalue="Python.sample" />
         <item index="2" class="java.lang.String" itemvalue="Python.Selenium" />
-        <item index="3" class="java.lang.String" itemvalue="Python.sample" />
+        <item index="3" class="java.lang.String" itemvalue="Python.sentiment_analyzer" />
       </list>
     </recent_temporary>
   </component>
@@ -547,9 +565,9 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33597463" sideWeight="0.50951684" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280507" sideWeight="0.4941435" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3280507" sideWeight="0.4941435" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23613313" sideWeight="0.49048316" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28684628" sideWeight="0.49048316" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -593,13 +611,111 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Prototype/src/sentiment_analyzer/sentiment_analyzer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+            <marker date="1503485248967" expanded="true" signature="386:418" ph="INSERT INTO sentiment... " />
+            <marker date="1503485248967" expanded="true" signature="386:457" ph="INSERT INTO sentiment... " />
+            <marker date="1503485248967" expanded="true" signature="540:588" ph="SELECT repor... report" />
+            <marker date="1503485248967" expanded="true" signature="540:602" ph="SELECT repor... report" />
+            <marker date="1503485248967" expanded="true" signature="635:636" ph="SELECT repor... report" />
+            <marker date="1503485248967" expanded="true" signature="753:869" ph="INSERT INTO sentiment... " />
+            <marker date="1503485248967" expanded="true" signature="1082:1126" ph="SELECT revie... review" />
+            <marker date="1503485248967" expanded="true" signature="1364:1401" ph="SELECT words... postive_dictionary" />
+            <marker date="1503485248967" expanded="true" signature="1572:1609" ph="SELECT words... negative_dictionary" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Prototype/src/gui/App.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2227">
+          <caret line="132" column="79" lean-forward="false" selection-start-line="132" selection-start-column="79" selection-end-line="132" selection-end-column="79" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+            <marker date="1503908323799" expanded="true" signature="243:577" ph="SELECT COUNT... sentiment" />
+            <marker date="1503908323799" expanded="true" signature="725:1059" ph="SELECT COUNT... sentiment" />
+            <marker date="1503908323799" expanded="true" signature="1208:1542" ph="SELECT COUNT... sentiment" />
+            <marker date="1503908323799" expanded="true" signature="1707:2041" ph="SELECT COUNT... sentiment" />
+            <marker date="1503908323799" expanded="true" signature="2202:2536" ph="SELECT COUNT... sentiment" />
+            <marker date="1503908323799" expanded="true" signature="2697:3031" ph="SELECT COUNT... sentiment" />
+            <marker date="1503908323799" expanded="true" signature="3204:3538" ph="SELECT COUNT... sentiment" />
+            <marker date="1503908323799" expanded="true" signature="3691:4025" ph="SELECT COUNT... sentiment" />
+            <marker date="1503908323799" expanded="true" signature="4178:4512" ph="SELECT COUNT... sentiment" />
+            <marker date="1503908323799" expanded="true" signature="4678:4804" ph="SELECT COUNT... sentiment" />
+            <marker date="1503908323799" expanded="true" signature="4678:4815" ph="SELECT COUNT... sentiment" />
+            <marker date="1503908323799" expanded="true" signature="4678:4849" ph="SELECT COUNT... sentiment" />
+            <marker date="1503908323799" expanded="true" signature="4961:5132" ph="SELECT COUNT... sentiment" />
+            <marker date="1503908323799" expanded="true" signature="5244:5415" ph="SELECT COUNT... sentiment" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Prototype/src/web_scraper/Selenium.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+            <marker date="1503908859642" expanded="true" signature="707:852" ph="INSERT INTO review... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Prototype/src/sentiment_analyzer/sentiment_analyzer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+            <marker date="1503485248967" expanded="true" signature="386:418" ph="INSERT INTO sentiment... " />
+            <marker date="1503485248967" expanded="true" signature="386:457" ph="INSERT INTO sentiment... " />
+            <marker date="1503485248967" expanded="true" signature="540:588" ph="SELECT repor... report" />
+            <marker date="1503485248967" expanded="true" signature="540:602" ph="SELECT repor... report" />
+            <marker date="1503485248967" expanded="true" signature="635:636" ph="SELECT repor... report" />
+            <marker date="1503485248967" expanded="true" signature="753:869" ph="INSERT INTO sentiment... " />
+            <marker date="1503485248967" expanded="true" signature="1082:1126" ph="SELECT revie... review" />
+            <marker date="1503485248967" expanded="true" signature="1364:1401" ph="SELECT words... postive_dictionary" />
+            <marker date="1503485248967" expanded="true" signature="1572:1609" ph="SELECT words... negative_dictionary" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Prototype/src/gui/App.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2227">
+          <caret line="132" column="79" lean-forward="true" selection-start-line="132" selection-start-column="79" selection-end-line="132" selection-end-column="79" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+            <marker date="1503908323799" expanded="true" signature="243:577" ph="SELECT COUNT... sentiment" />
+            <marker date="1503908323799" expanded="true" signature="725:1059" ph="SELECT COUNT... sentiment" />
+            <marker date="1503908323799" expanded="true" signature="1208:1542" ph="SELECT COUNT... sentiment" />
+            <marker date="1503908323799" expanded="true" signature="1707:2041" ph="SELECT COUNT... sentiment" />
+            <marker date="1503908323799" expanded="true" signature="2202:2536" ph="SELECT COUNT... sentiment" />
+            <marker date="1503908323799" expanded="true" signature="2697:3031" ph="SELECT COUNT... sentiment" />
+            <marker date="1503908323799" expanded="true" signature="3204:3538" ph="SELECT COUNT... sentiment" />
+            <marker date="1503908323799" expanded="true" signature="3691:4025" ph="SELECT COUNT... sentiment" />
+            <marker date="1503908323799" expanded="true" signature="4178:4512" ph="SELECT COUNT... sentiment" />
+            <marker date="1503908323799" expanded="true" signature="4678:4804" ph="SELECT COUNT... sentiment" />
+            <marker date="1503908323799" expanded="true" signature="4678:4815" ph="SELECT COUNT... sentiment" />
+            <marker date="1503908323799" expanded="true" signature="4678:4849" ph="SELECT COUNT... sentiment" />
+            <marker date="1503908323799" expanded="true" signature="4961:5132" ph="SELECT COUNT... sentiment" />
+            <marker date="1503908323799" expanded="true" signature="5244:5415" ph="SELECT COUNT... sentiment" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Prototype/src/lol.py" />
     <entry file="file://$PROJECT_DIR$/Prototype/src/web_scraper/Selenium.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
-            <marker date="1503344250464" expanded="true" signature="707:852" ph="INSERT INTO review... " />
+            <marker date="1503908859642" expanded="true" signature="707:852" ph="INSERT INTO review... " />
           </folding>
         </state>
       </provider>
@@ -629,21 +745,20 @@
           <caret line="92" column="0" lean-forward="true" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
-            <marker date="1503484914552" expanded="true" signature="243:577" ph="SELECT COUNT... sentiment" />
-            <marker date="1503484914552" expanded="true" signature="725:1059" ph="SELECT COUNT... sentiment" />
-            <marker date="1503484914552" expanded="true" signature="1208:1542" ph="SELECT COUNT... sentiment" />
-            <marker date="1503484914552" expanded="true" signature="1707:2041" ph="SELECT COUNT... sentiment" />
-            <marker date="1503484914552" expanded="true" signature="2202:2536" ph="SELECT COUNT... sentiment" />
-            <marker date="1503484914552" expanded="true" signature="2697:3031" ph="SELECT COUNT... sentiment" />
-            <marker date="1503484914552" expanded="true" signature="3204:3538" ph="SELECT COUNT... sentiment" />
-            <marker date="1503484914552" expanded="true" signature="3691:4025" ph="SELECT COUNT... sentiment" />
-            <marker date="1503484914552" expanded="true" signature="4178:4512" ph="SELECT COUNT... sentiment" />
-            <marker date="1503484914552" expanded="true" signature="4678:4804" ph="SELECT COUNT... sentiment" />
-            <marker date="1503484914552" expanded="true" signature="4678:4815" ph="SELECT COUNT... sentiment" />
-            <marker date="1503484914552" expanded="true" signature="4678:4849" ph="SELECT COUNT... sentiment" />
-            <marker date="1503484914552" expanded="true" signature="4678:4853" ph="SELECT COUNT... sentiment" />
-            <marker date="1503484914552" expanded="true" signature="4961:5132" ph="SELECT COUNT... sentiment" />
-            <marker date="1503484914552" expanded="true" signature="5244:5415" ph="SELECT COUNT... sentiment" />
+            <marker date="1503908323799" expanded="true" signature="243:577" ph="SELECT COUNT... sentiment" />
+            <marker date="1503908323799" expanded="true" signature="725:1059" ph="SELECT COUNT... sentiment" />
+            <marker date="1503908323799" expanded="true" signature="1208:1542" ph="SELECT COUNT... sentiment" />
+            <marker date="1503908323799" expanded="true" signature="1707:2041" ph="SELECT COUNT... sentiment" />
+            <marker date="1503908323799" expanded="true" signature="2202:2536" ph="SELECT COUNT... sentiment" />
+            <marker date="1503908323799" expanded="true" signature="2697:3031" ph="SELECT COUNT... sentiment" />
+            <marker date="1503908323799" expanded="true" signature="3204:3538" ph="SELECT COUNT... sentiment" />
+            <marker date="1503908323799" expanded="true" signature="3691:4025" ph="SELECT COUNT... sentiment" />
+            <marker date="1503908323799" expanded="true" signature="4178:4512" ph="SELECT COUNT... sentiment" />
+            <marker date="1503908323799" expanded="true" signature="4678:4804" ph="SELECT COUNT... sentiment" />
+            <marker date="1503908323799" expanded="true" signature="4678:4815" ph="SELECT COUNT... sentiment" />
+            <marker date="1503908323799" expanded="true" signature="4678:4849" ph="SELECT COUNT... sentiment" />
+            <marker date="1503908323799" expanded="true" signature="4961:5132" ph="SELECT COUNT... sentiment" />
+            <marker date="1503908323799" expanded="true" signature="5244:5415" ph="SELECT COUNT... sentiment" />
           </folding>
         </state>
       </provider>
@@ -654,7 +769,7 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
-            <marker date="1503344250464" expanded="true" signature="707:852" ph="INSERT INTO review... " />
+            <marker date="1503908859642" expanded="true" signature="707:852" ph="INSERT INTO review... " />
           </folding>
         </state>
       </provider>
@@ -665,7 +780,7 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
-            <marker date="1503344250464" expanded="true" signature="707:852" ph="INSERT INTO review... " />
+            <marker date="1503908859642" expanded="true" signature="707:852" ph="INSERT INTO review... " />
           </folding>
         </state>
       </provider>
@@ -713,28 +828,10 @@
     <entry file="file://$PROJECT_DIR$/Prototype/tests/sentiment_analyzer/sentiment_analyzer.py" />
     <entry file="file://$PROJECT_DIR$/Prototype/tests/web_scraper/agoda.py" />
     <entry file="file://$PROJECT_DIR$/Prototype/tests/web_scraper/Selenium.py" />
-    <entry file="file://$PROJECT_DIR$/Prototype/src/web_scraper/sample.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="103" column="69" lean-forward="true" selection-start-line="69" selection-start-column="4" selection-end-line="103" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Prototype/src/web_scraper/Selenium.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-459">
-          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-            <marker date="1503344250464" expanded="true" signature="707:852" ph="INSERT INTO review... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Prototype/src/sentiment_analyzer/sentiment_analyzer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1020">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state relative-caret-position="204">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
             <marker date="1503485248967" expanded="true" signature="386:418" ph="INSERT INTO sentiment... " />
@@ -752,25 +849,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Prototype/src/gui/App.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2244">
-          <caret line="132" column="79" lean-forward="true" selection-start-line="132" selection-start-column="79" selection-end-line="132" selection-end-column="79" />
+        <state relative-caret-position="187">
+          <caret line="125" column="0" lean-forward="false" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
-            <marker date="1503484914552" expanded="true" signature="243:577" ph="SELECT COUNT... sentiment" />
-            <marker date="1503484914552" expanded="true" signature="725:1059" ph="SELECT COUNT... sentiment" />
-            <marker date="1503484914552" expanded="true" signature="1208:1542" ph="SELECT COUNT... sentiment" />
-            <marker date="1503484914552" expanded="true" signature="1707:2041" ph="SELECT COUNT... sentiment" />
-            <marker date="1503484914552" expanded="true" signature="2202:2536" ph="SELECT COUNT... sentiment" />
-            <marker date="1503484914552" expanded="true" signature="2697:3031" ph="SELECT COUNT... sentiment" />
-            <marker date="1503484914552" expanded="true" signature="3204:3538" ph="SELECT COUNT... sentiment" />
-            <marker date="1503484914552" expanded="true" signature="3691:4025" ph="SELECT COUNT... sentiment" />
-            <marker date="1503484914552" expanded="true" signature="4178:4512" ph="SELECT COUNT... sentiment" />
-            <marker date="1503484914552" expanded="true" signature="4678:4804" ph="SELECT COUNT... sentiment" />
-            <marker date="1503484914552" expanded="true" signature="4678:4815" ph="SELECT COUNT... sentiment" />
-            <marker date="1503484914552" expanded="true" signature="4678:4849" ph="SELECT COUNT... sentiment" />
-            <marker date="1503484914552" expanded="true" signature="4678:4853" ph="SELECT COUNT... sentiment" />
-            <marker date="1503484914552" expanded="true" signature="4961:5132" ph="SELECT COUNT... sentiment" />
-            <marker date="1503484914552" expanded="true" signature="5244:5415" ph="SELECT COUNT... sentiment" />
+            <marker date="1503908323799" expanded="true" signature="243:577" ph="SELECT COUNT... sentiment" />
+            <marker date="1503908323799" expanded="true" signature="725:1059" ph="SELECT COUNT... sentiment" />
+            <marker date="1503908323799" expanded="true" signature="1208:1542" ph="SELECT COUNT... sentiment" />
+            <marker date="1503908323799" expanded="true" signature="1707:2041" ph="SELECT COUNT... sentiment" />
+            <marker date="1503908323799" expanded="true" signature="2202:2536" ph="SELECT COUNT... sentiment" />
+            <marker date="1503908323799" expanded="true" signature="2697:3031" ph="SELECT COUNT... sentiment" />
+            <marker date="1503908323799" expanded="true" signature="3204:3538" ph="SELECT COUNT... sentiment" />
+            <marker date="1503908323799" expanded="true" signature="3691:4025" ph="SELECT COUNT... sentiment" />
+            <marker date="1503908323799" expanded="true" signature="4178:4512" ph="SELECT COUNT... sentiment" />
+            <marker date="1503908323799" expanded="true" signature="4678:4804" ph="SELECT COUNT... sentiment" />
+            <marker date="1503908323799" expanded="true" signature="4678:4815" ph="SELECT COUNT... sentiment" />
+            <marker date="1503908323799" expanded="true" signature="4678:4849" ph="SELECT COUNT... sentiment" />
+            <marker date="1503908323799" expanded="true" signature="4961:5132" ph="SELECT COUNT... sentiment" />
+            <marker date="1503908323799" expanded="true" signature="5244:5415" ph="SELECT COUNT... sentiment" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Prototype/src/web_scraper/sample.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+            <marker date="1503910639367" expanded="true" signature="851:996" ph="INSERT INTO review... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Prototype/src/web_scraper/Selenium.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2414">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+            <marker date="1503908859642" expanded="true" signature="707:852" ph="INSERT INTO review... " />
           </folding>
         </state>
       </provider>

@@ -114,7 +114,6 @@ def view_analysis(id):
 
 def start_app():
     print("Performing Web Data Extraction...")
-    time.sleep(3)
 
     call('python ../web_scraper/Selenium.py', shell=True)
 
@@ -123,8 +122,8 @@ def start_app():
 
     call('python ../sentiment_analyzer/sentiment_analyzer.py', shell=True)
 
-    print("=================== ANALYSIS Result ===================")
-    view_analysis()
+    print("=================== ANALYSIS Complete ===================")
+
 
 if __name__ == "__main__":
     print("Sentiment Analysis App")
