@@ -1,0 +1,108 @@
+=== RESULTS ===
+File = warandpeace.txt
+Longest word = hofs-kriegs-wurst-schnapps-rath (31)
+Shortest word = i (1)
+Mean word length /chars = 4.49533924827
+Total words parsed = 565574
+Total chars parsed = 2542447
+
+=== Commonest 1-words ===
+1 = the (34546 = 6.108%)
+2 = and (22139 = 3.914%)
+3 = to (16704 = 2.953%)
+4 = of (14985 = 2.649%)
+5 = a (10513 = 1.858%)
+
+=== Commonest 2-words ===
+1 = of the (4057 = 0.717%)
+2 = to the (2329 = 0.411%)
+3 = in the (2324 = 0.410%)
+4 = and the (1468 = 0.259%)
+5 = at the (1345 = 0.237%)
+
+=== Commonest 3-words ===
+1 = he did not (223 = 0.039%)
+2 = one of the (186 = 0.032%)
+3 = out of the (178 = 0.031%)
+4 = that he was (155 = 0.027%)
+5 = as soon as (146 = 0.025%)
+
+=== Commonest 4-words ===
+1 = the commander in chief (82 = 0.014%)
+2 = for a long time (77 = 0.013%)
+3 = for the first time (69 = 0.012%)
+4 = at the same time (61 = 0.010%)
+5 = in the middle of (52 = 0.009%)
+
+=== Commonest 5-words ===
+1 = in the middle of the (34 = 0.006%)
+2 = it seemed to him that (23 = 0.004%)
+3 = the other side of the (20 = 0.003%)
+4 = up and down the room (20 = 0.003%)
+5 = at the end of the (17 = 0.003%)
+
+=== Commonest 6-words ===
+1 = the project gutenberg literary archive foundation (13 = 0.002%)
+2 = in the middle of the room (11 = 0.001%)
+3 = it seemed to him that he (8 = 0.001%)
+4 = but what am i to do (7 = 0.001%)
+5 = the collective will of the people (7 = 0.001%)
+
+=== Commonest 7-words ===
+1 = it seemed to him that he was (6 = 0.001%)
+2 = to the project gutenberg literary archive foundation (6 = 0.001%)
+3 = to get away as quickly as possible (5 = 0.000%)
+4 = that it was impossible for him to (4 = 0.000%)
+5 = that the will of the people is (4 = 0.000%)
+
+=== Commonest 8-words ===
+1 = shall look forward very much to your return (3 = 0.000%)
+2 = what am i to do if i love (3 = 0.000%)
+3 = that the collective will of the people is (3 = 0.000%)
+4 = in the morning of the second of september (3 = 0.000%)
+5 = donations to the project gutenberg literary archive foundation (3 = 0.000%)
+
+=== Commonest 9-words ===
+1 = its three bridges advancing to the same heights as (2 = 0.000%)
+2 = i will detain you no longer general you shall (2 = 0.000%)
+3 = to give up all the carts to the wounded (2 = 0.000%)
+4 = his wish to be present at the battle and (2 = 0.000%)
+5 = 1 e 8 or 1 e 9 1 e (2 = 0.000%)
+
+=== Commonest 10-words ===
+1 = under the same conditions and with the same character he (2 = 0.000%)
+2 = what we shall see that is what we shall see (2 = 0.000%)
+3 = jesus christ holy saint nicholas frola and lavra lord jesus (2 = 0.000%)
+4 = of the revolution and the general temper of the age (2 = 0.000%)
+5 = you ought to have been there at seven in the (2 = 0.000%)
+
+=== FREQUENCY ANALYSIS ===
+a |######## 8.07% (110.% deviation from random)
+b |# 1.36% (64.5% deviation from random)
+c |## 2.40% (37.3% deviation from random)
+d |#### 4.65% (20.9% deviation from random)
+e |############ 12.3% (221.% deviation from random)
+f |## 2.15% (43.8% deviation from random)
+g |## 2.01% (47.5% deviation from random)
+h |###### 6.56% (70.7% deviation from random)
+i |###### 6.83% (77.6% deviation from random)
+j | 0.10% (97.3% deviation from random)
+k | 0.80% (79.1% deviation from random)
+l |### 3.79% (1.31% deviation from random)
+m |## 2.42% (36.9% deviation from random)
+n |####### 7.24% (88.2% deviation from random)
+o |####### 7.58% (97.1% deviation from random)
+p |# 1.77% (53.8% deviation from random)
+q | 0.09% (97.6% deviation from random)
+r |##### 5.82% (51.3% deviation from random)
+s |###### 6.40% (66.5% deviation from random)
+t |######## 8.88% (131.% deviation from random)
+u |## 2.57% (33.1% deviation from random)
+v |# 1.05% (72.4% deviation from random)
+w |## 2.32% (39.4% deviation from random)
+x | 0.15% (95.8% deviation from random)
+y |# 1.81% (52.6% deviation from random)
+z | 0.09% (97.5% deviation from random)
+
+Total percentage deviation from random = 1886%
+Average percentage deviation from random = 72.5%
